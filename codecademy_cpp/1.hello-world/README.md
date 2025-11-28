@@ -20,4 +20,5 @@ int main() {
 }
 ```
 
-
+>[!note] Add'l Resources
+> [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html)
