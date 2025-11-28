@@ -7,4 +7,6 @@ int main()
 	// manually spec executable name
 	std::cout << "\nOR: Specify executable file name via 'g++ execute-me.cpp -o executable-name'\n";
 
+	/* This is
+	a multi-line comment */
 }
