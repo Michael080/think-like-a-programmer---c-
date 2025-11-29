@@ -10,7 +10,9 @@ The formula is the following:
 C=(F−32)/1.8
 */
 int main() {
-	double tempf = 43;
+	double tempf;
+	std::cout <<  "Enter the temperature in Fahrenheit: ";
+	std::cin >> tempf;
 	double tempc = (tempf - 32) / 1.8;
 	// print: The temp is [tempc] degrees Celsius.
 	std::cout << "The temp is " << tempc << " degrees Celsius.\n";
