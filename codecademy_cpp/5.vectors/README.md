@@ -22,6 +22,19 @@ std::vector<int> myVector;
 std::vector<double> myVector(2); // => {0.0, 0.0}, because default value for a double is `0.0`
 ```
 
+### functions
+A function which returns a `vector` I found tricky
+```c++
+// declare outside of `main`
+// *NOTE:* type of `<int>` could be anything `<double>`, `<float>`, etc,.
+std::vector<int> thingamajig(int num) {
+    // code
+}
+
+int main() {
+    // ...
+```
+
 # Arrays
 In `c++` arrays are *lower-level constructs* than vectors so require more work from the user.
 - *require static size*
