@@ -71,6 +71,10 @@ g++ main.cpp my_functions.cpp
 ```
 
 #### separate header files
+>[!note] Add'l note
+> ##### [function declarations in a header file | markdown note](func-declaration-in-header-file.md)
+> ##### [Beginning C++: *Ch 10* | *Book*](~/Documents/Books/programming-and-cs/c++/Apress.Beginning.Cplusplus.17.From.Novice.to.Professional.5th.Edition.pdf)
+
 Instead of keeping the *function declarations* @ the top of `main.cpp` they can be kept in a separate file to reduce clutter.
 
 >[!example]
