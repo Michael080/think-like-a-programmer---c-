@@ -47,3 +47,10 @@ In the preceding code sample, we declare `.get_population()` in the header file,
 >[!note] We must declare a method inside the class if we want to define it outside.
 >[!note] I find this a bit perplexing. I should prob. read up more on how header files actually work!
 
+### Create Objects
+```c++
+// create an instance of City
+City new_york;
+// set population
+new_york.population = 1111111;
+```
