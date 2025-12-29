@@ -82,3 +82,54 @@ private:
 
 #### Setters/getters
 Usage of setters such as `.add_artist()` under `public` enables setting of values that can be validated etc,. which theoretically assists in bug prevention that can't be implimented when a value is completely exposed publically.
+
+
+## Constructors
+>[!example] For another example of constructor functions see [[./song.constructors/]]
+
+- no return type
+- add member values @ instantiation
+
+>[!quote]
+> *A **constructor ** is a specially defined method in a C++ class that is automatically called when an instance of that class is created. It has the same name as the class and no return type. **Constructors ** really shine when you want to instantiate an object with specific attributes.*
+
+**Ensure `City` objects have a `name` and `population` @ creation using *parameters* and a *member initializer list***
+```cpp
+// city.hpp
+#include "city.hpp"
+
+class City {
+
+  std::string name;
+  int population;
+
+  // the constructor function (methinks...)
+  public:
+    City(std::string new_name, int new_pop);
+};
+
+// ----------------------------------------
+// city.cpp
+City::City(std::string new_name, int new_pop)
+  // members get initialized to values passed in
+  : name(new_name), population(new_pop) {}
+
+// OR, if the syntax above sucks as, the following alternative syntax:
+City:City(std::string new_name, int new_pop) {
+    name = new_name;
+    population = new_pop;
+}
+```
+
+**Instantiate an object w/ attributes:**
+```cpp
+
+// ...
+
+int main() {
+
+City ankara("Ankara", 5445000);
+
+}
+```
+
