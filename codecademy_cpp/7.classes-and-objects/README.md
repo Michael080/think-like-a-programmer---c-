@@ -54,3 +54,31 @@ City new_york;
 // set population
 new_york.population = 1111111;
 ```
+
+## [Access Control: Public & Private](https://www.codecademy.com/courses/learn-c-plus-plus/lessons/cpp-classes-and-objects/exercises/cpp-class-access-control)
+>[!quote]
+> *By default, everything in a class is `private`, meaning class members are limited to the scope of the class. This makes it easier to keep data from mistakenly being altered, and abstracts away all the nitty gritty details.*
+
+### Allow Access via `public`
+Because the default behavior when trying to access class members is to throw an error in order to allow access to them requires use of the modifier `public`
+
+
+```cpp
+class City {
+  int population;
+
+// everything below `public` is... public
+public:
+    void add_resident() {
+        population++;
+    }
+
+
+// There is also a `private` modifier which can set things below public to be private.
+private:
+    bool is_capital;
+};
+```
+
+#### Setters/getters
+Usage of setters such as `.add_artist()` under `public` enables setting of values that can be validated etc,. which theoretically assists in bug prevention that can't be implimented when a value is completely exposed publically.
